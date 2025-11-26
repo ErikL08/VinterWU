@@ -1,6 +1,6 @@
-body{
+body {
     margin: 0px;
-    text-decoration: #f39c12;   
+    text-decoration: #f39c12;
 }
 
 div {
@@ -13,7 +13,6 @@ div {
         "nv mn as"
         "se mn as"
         "ft ft ft";
-    border-radius: 10px;
 }
 
 header {
@@ -23,26 +22,39 @@ header {
     justify-content: center;
     align-items: center;
     font-size: larger;
+    text-decoration: white;
 }
 
 nav {
     grid-area: nv;
-    box-shadow: 3px 3px 3px 5px #f39c12;
+    box-shadow: 3px 5px 5px 3px #f39c12;
     margin-left: 10px;
     background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
 main {
     grid-area: mn;
     box-shadow: 3px 3px 3px 3px #f39c12;
     background-color: white;
+    border-radius: 20px;
+    overflow: hidden scroll;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
 }
 
 section {
     grid-area: se;
-    box-shadow: 3px 3px 3px 5px #f39c12;
+    box-shadow: 3px 3px 5px 3px #f39c12;
     margin-left: 10px;
     background-color: white;
+    border-radius: 20px;
 }
 
 aside {
@@ -50,6 +62,7 @@ aside {
     box-shadow: 3px 3px 3px 3px #f39c12;
     margin-right: 10px;
     background-color: white;
+    border-radius: 20px;
 }
 
 footer {
@@ -61,10 +74,19 @@ footer {
     font-size: large;
 }
 
-h1 {
+.vit{
     color: white;
 }
 
-h2{
-    color: white;
+.orange {
+    color: #f39c12;
+}
+
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+h1, h2 {
+    align-self: center;
 }
