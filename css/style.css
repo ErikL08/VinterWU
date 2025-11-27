@@ -1,13 +1,12 @@
 body {
     margin: 0px;
-    text-decoration: #f39c12;
 }
 
 div {
     display: grid;
     height: 100vh;
     gap: 10px;
-    grid-template: 10vh 1fr 1fr 10vh / 1fr 55vw 23vw;
+    grid-template: 10vh 1fr 1fr 8vh / 1fr 55vw 23vw;
     grid-template-areas:
         "hd hd hd"
         "nv mn as"
@@ -42,7 +41,9 @@ main {
     box-shadow: 3px 3px 3px 3px #f39c12;
     background-color: white;
     border-radius: 20px;
-    overflow: hidden scroll;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -63,6 +64,11 @@ aside {
     margin-right: 10px;
     background-color: white;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 footer {
@@ -85,8 +91,9 @@ footer {
 a {
     font-size: 1.5em;
     text-decoration: none;
+    font-weight: 550;
 }
 
-h1, h2 {
+h1, h2, h3 {
     align-self: center;
 }
