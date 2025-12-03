@@ -48,6 +48,7 @@ main {
     align-items: start;
     flex-direction: column;
     padding: 10px;
+    color: #f39c12;
 }
 
 section {
@@ -80,12 +81,8 @@ footer {
     font-size: large;
 }
 
-.vit{
+.vit {
     color: white;
-}
-
-.orange {
-    color: #f39c12;
 }
 
 a {
@@ -94,6 +91,21 @@ a {
     font-weight: 550;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     align-self: center;
+}
+
+.vänster {
+    align-self: flex-start;
+}
+
+a {
+    color: #f39c12;
+}
+
+#kort {
+    columns: 2;
+    column-gap: 20px;
 }
