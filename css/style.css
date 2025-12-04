@@ -36,7 +36,7 @@ nav {
     flex-direction: column;
 }
 
-main {
+.main1 {
     grid-area: mn;
     box-shadow: 3px 3px 3px 3px #f39c12;
     background-color: white;
@@ -45,13 +45,13 @@ main {
     scroll-behavior: smooth;
     scrollbar-width: none;
     display: flex;
-    align-items: start;
+    align-items: start; 
     flex-direction: column;
     padding: 10px;
     color: #f39c12;
 }
 
-section {
+.section {
     grid-area: se;
     box-shadow: 3px 3px 5px 3px #f39c12;
     margin-left: 10px;
@@ -95,6 +95,7 @@ h1,
 h2,
 h3 {
     align-self: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .vänster {
@@ -103,9 +104,46 @@ h3 {
 
 a {
     color: #f39c12;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #kort {
     columns: 2;
     column-gap: 20px;
+    grid-area: mn;
+    box-shadow: 3px 3px 3px 3px #f39c12;
+    background-color: white;
+    border-radius: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 10px;
+    flex-direction: column;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+
+.kort_bild {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
