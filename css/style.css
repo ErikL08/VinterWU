@@ -51,7 +51,7 @@ nav {
     color: #f39c12;
 }
 
-.section {
+.section1 {
     grid-area: se;
     box-shadow: 3px 3px 5px 3px #f39c12;
     margin-left: 10px;
@@ -108,8 +108,8 @@ a {
 }
 
 #kort {
-    columns: 2;
-    column-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     grid-area: mn;
     box-shadow: 3px 3px 3px 3px #f39c12;
     background-color: white;
@@ -118,7 +118,8 @@ a {
     scroll-behavior: smooth;
     scrollbar-width: none;
     padding: 10px;
-    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
 }
 
 p {
@@ -126,8 +127,7 @@ p {
 }
 
 .card {
-    display: inline-block;
-    width: 100%;
+    width: 46%;
     position: relative;
 }
 
@@ -136,14 +136,21 @@ p {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     width: 100%;
     background-color: white;
+    color: #f39c12;
 }
 
 .kort_bild {
     width: 100%;
     height: auto;
     border-radius: 20px;
+}
+
+.loga {
+    justify-self: start;
+    height: 8vh;
+    width: auto;
 }
