@@ -17,11 +17,13 @@ div {
 header {
     grid-area: hd;
     background-color: #f39c12;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "lo ru";
+    grid-template-columns: 5vw 95vw;
+    grid-template-rows: 10vh;
     font-size: larger;
-    text-decoration: white;
+    color: white;
 }
 
 nav {
@@ -57,6 +59,10 @@ nav {
     margin-left: 10px;
     background-color: white;
     border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 aside {
@@ -94,7 +100,7 @@ a {
 h1,
 h2,
 h3 {
-    align-self: center;
+    justify-self: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -150,7 +156,33 @@ p {
 }
 
 .loga {
-    justify-self: start;
     height: 8vh;
     width: auto;
+    border-radius: 20px;
+}
+
+.rubrik {
+    grid-area: ru;
+    display: flex;
+    position: absolute;
+    left: 42%;
+    align-items: center;
+}
+
+.bild-loga {
+    grid-area: lo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loga2 {
+    width: 100%;
+    height: auto;
+}
+
+.om_oss_bild {
+    height: auto;
+    width: 100%;
+    border-radius: 30px;
 }
