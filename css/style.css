@@ -47,7 +47,6 @@ nav {
     scroll-behavior: smooth;
     scrollbar-width: none;
     display: flex;
-    align-items: start; 
     flex-direction: column;
     padding: 10px;
     color: #f39c12;
@@ -100,7 +99,6 @@ a {
 h1,
 h2,
 h3 {
-    justify-self: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -185,4 +183,8 @@ p {
     height: auto;
     width: 100%;
     border-radius: 30px;
+}
+
+#mindre {
+    font-size: small;
 }
